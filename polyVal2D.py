@@ -6,10 +6,10 @@ def polyVal2D(p, x, y, n, m):
   
   Evaluate a 2-D polynomial using Horner's method.
   
-  Evaluates the 2-D polynomial p at the points specified by X
-  and Y, which must be the same dimensions. The output F will
-  be the same dimensions as X and Y. N and M specify the order
-  of X and Y respectively.
+  Evaluates the 2-D polynomial `p` at the points specified by `x`
+  and `y`, which must be the same dimensions. The output `f` will
+  have the same dimensions as `x` and `y`. The order of `x` and `y`
+  are specified by `n` and `m`, respectively.
   
   Parameters
   ----------
