@@ -4,6 +4,8 @@ function f = polyVal2D(p,x,y,n,m)
 %   points specified by X and Y, which must be the same
 %   dimensions. The output F will be the same dimensions as X and 
 %   Y. N and M specify the order of X and Y respectively.
+% See also: POLYFITN by John D'Errico on MathWorks MATLAB Central FEX
+% http://www.mathworks.com/matlabcentral/fileexchange/34765-polyfitn
 % TODO: check input args
 f = p(1);
 for ni = 1:n
