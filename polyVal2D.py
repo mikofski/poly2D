@@ -43,11 +43,11 @@ def polyVal2D(p, x, y, n, m):
   y = np.array(y)
   f = p[0]
   for ni in range(n):
-      f = f * x + p[1 + ni]
-  npp = n + 1
+    f = f * x + p[1 + ni]
   for mi in range(m):
-      g = p[npp * mi + 1]
-      for ni in range(n):
-          g = g * x + p[npp * mi + 1 + ni]
-      f = f * y + g
+    mpp = (n + 1) * (mi + 1)
+    g = p[mpp]
+    for ni in range(n):
+      g = g * x + p[mpp + 1 + ni]
+    f = f * y + g
   return f
