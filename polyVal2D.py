@@ -41,7 +41,7 @@ def polyVal2D(p, x, y, n, m):
   # TODO: check input args
   x = np.array(x)
   y = np.array(y)
-  f = p[1]
+  f = p[0]
   for ni in range(n):
       f = f * x + p[1 + ni]
   npp = n + 1
