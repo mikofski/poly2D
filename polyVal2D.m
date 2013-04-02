@@ -11,11 +11,11 @@ f = p(1);
 for ni = 1:n
     f = f.*x+p(1+ni);
 end
-npp = n+1;
 for mi = 1:m
-    g = p(npp*mi+1);
+    mpp = (n+1)*mi+1
+    g = p(mpp);
     for ni = 1:n
-        g = g.*x+p(npp*mi+1+ni);
+        g = g.*x+p(mpp+ni);
     end
     f = f.*y+g;
 end
