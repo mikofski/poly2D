@@ -12,10 +12,10 @@ for ni = 1:n
     f = f.*x+p(1+ni);
 end
 for mi = 1:m
-    mpp = (n+1)*mi+1
-    g = p(mpp);
+    mj = (n+1)*mi+1
+    g = p(mj);
     for ni = 1:n
-        g = g.*x+p(mpp+ni);
+        g = g.*x+p(mj+ni);
     end
     f = f.*y+g;
 end
