@@ -11,7 +11,19 @@ function p = polyFit2D(f,x,y,n,m)
 %
 % See also: POLYFITN by John D'Errico on MathWorks MATLAB Central FEX
 % http://www.mathworks.com/matlabcentral/fileexchange/34765-polyfitn
+%
+% Mark Mikofski, http://poquitopicante.blogspot.com
+% Version 1-0, 2013-03-13
 
+%% LaTex
+%
+% $$f\left(x,y\right)=p_1 x^n y^m+p_2 x^{\left(n-1\right)} y^m+\ldots+p_{n+1} y^m+\ldots$$
+%
+% $$p_{n+2}x^ny^{\left(m-1\right)}+p_{n+3}x^{\left(n-1\right)}y^{\left(m-1\right)}+\ldots+p_{2\left(n+1\right)}y^{\left(m-1\right)}+\ldots$$
+%
+% $$\ldots$$
+%
+% $$p_{m\left(n+1\right)+1}*x^n+p_{m\left(n+1\right)+2}*x^{\left(n-1\right)}+\ldots+p_{\left(n+1\right)\left(m+1\right)}$$
 
 %% check input args
 validateattributes(f,{'numeric'},{'nonempty','real','finite'}, ...
