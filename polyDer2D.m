@@ -1,9 +1,10 @@
 function [fx,fy] = polyDer2D(p,x,y,n,m)
-%POLYDER2D Evaluate a 2-D polynomial using Horner's method.
-%   F = POLYDER2D(P,X,Y,N,M) evaluates the 2-D polynomial P at the points
-%   specified by X and Y, which must have the same dimensions. The output F
-%   will have the same dimensions as X and Y. N and M specify the order of X
-%   and Y respectively. Polynomial coefficients are in the following order.
+%POLYDER2D Evaluate derivatives of 2-D polynomial using Horner's method.
+%   F = POLYDER2D(P,X,Y,N,M) evaluates the derivatives of 2-D polynomial P at
+%   the points specified by X and Y, which must have the same dimensions. The
+%   outputs FX and FY will have the same dimensions as X and Y. N and M specify
+%   the order of X and Y respectively. Polynomial coefficients are in the
+%   following order.
 %
 %   F(X,Y) = P_1 * X^N * Y^M + P_2 * X^{N-1} * Y^M + ... + P_{N+1} * Y^M + ...
 %            P_{N+2} * X^N * Y^{M-1} + P_{N+3} * X^{N-1} * Y^{M-1} + ... + P_{2*(N+1)} * Y^{M-1} + ...

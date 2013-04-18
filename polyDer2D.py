@@ -4,7 +4,7 @@ def polyDer2D(p, x, y, n, m):
     """
     polyDer2D(p, x, y, n, m)
 
-    Evaluate a derivatives of 2-D polynomial using Horner's method.
+    Evaluate derivatives of a 2-D polynomial using Horner's method.
 
     Evaluates the derivatives of 2-D polynomial `p` at the points
     specified by `x` and `y`, which must be the same dimensions. The
@@ -33,7 +33,7 @@ def polyDer2D(p, x, y, n, m):
 
     See Also
     --------
-    numpy.polyval : Evaluate a polynomial at specific values.
+    numpy.polynomial.polynomial.polyval2d : Evaluate a 2-D polynomial at points (x, y).
 
     Example
     --------

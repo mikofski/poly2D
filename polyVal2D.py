@@ -14,24 +14,24 @@ def polyVal2D(p, x, y, n, m):
     Parameters
     ----------
     p : array_like
-      Polynomial coefficients in order specified by polyVal2D.html.
+        Polynomial coefficients in order specified by polyVal2D.html.
     x : array_like
-      Values of 1st independent variable.
+        Values of 1st independent variable.
     y : array_like
-      Values of 2nd independent variable.
+        Values of 2nd independent variable.
     n : int
-      Order of the 1st independent variable, `x`.
+        Order of the 1st independent variable, `x`.
     m : int
-      Order of the 2nd independent variable, `y`.
+        Order of the 2nd independent variable, `y`.
 
     Returns
     -------
     f : ndarray
-      Values of the evaluated 2-D polynomial.
+        Values of the evaluated 2-D polynomial.
 
     See Also
     --------
-    numpy.polyval : Evaluate a polynomial at specific values.
+    numpy.polynomial.polynomial.polyval2d : Evaluate a 2-D polynomial at points (x, y).
 
     Example
     --------
